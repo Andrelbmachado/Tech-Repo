@@ -21,13 +21,17 @@ def records() -> list[dict]:
     for metadata_path in sorted((ROOT / "docs").rglob("tech.yml")):
         data = yaml.safe_load(metadata_path.read_text(encoding="utf-8")) or {}
         data["path"] = metadata_path.parent.relative_to(ROOT).as_posix()
+        local_docs = metadata_path.parent / "documentacao-oficial" / "README.md"
+        data["local_official_docs"] = local_docs.is_file()
+        if local_docs.is_file():
+            data["local_official_docs_path"] = local_docs.relative_to(ROOT).as_posix()
         result.append(data)
     return result
 
 
 def outputs(items: list[dict]) -> dict[Path, str]:
     catalog_lines = ["schema_version: 1", "repository: Tech-Repo", "generated_by: tools/generate_indexes.py", "technologies:"]
-    ai_lines = ["schema_version: 1", "repository: Tech-Repo", "catalog: CATALOG.yml", "map: MAPA.md", "technology_map: MAPA-TECNOLOGIAS.md", "technology_record_files: [tech.yml, fontes.yml, README.md]", "technologies:"]
+    ai_lines = ["schema_version: 1", "repository: Tech-Repo", "catalog: CATALOG.yml", "map: MAPA.md", "technology_map: MAPA-TECNOLOGIAS.md", "technology_record_files: [tech.yml, fontes.yml, README.md]", "local_documentation_directory: documentacao-oficial/", "local_documentation_manifest: documentacao-oficial/README.md", "technologies:"]
     map_lines = ["# Mapa de tecnologias", "", "Gerado a partir dos arquivos `tech.yml`. Edite os metadados da tecnologia, não esta lista.", ""]
     by_category: dict[str, list[dict]] = {}
     for item in items:
@@ -40,7 +44,9 @@ def outputs(items: list[dict]) -> dict[Path, str]:
             f"    path: {quote(str(item['path']))}",
         ]
         catalog_lines.extend(common + [f"    source_quota_status: {quote(str(quota.get('status', 'pending')))}"])
-        ai_lines.extend(common + [f"    official_source_count: {int(quota.get('official_count', 0))}", f"    source_quota_status: {quote(str(quota.get('status', 'pending')))}"])
+        ai_lines.extend(common + [f"    official_source_count: {int(quota.get('official_count', 0))}", f"    source_quota_status: {quote(str(quota.get('status', 'pending')))}", f"    has_local_official_docs: {'true' if item['local_official_docs'] else 'false'}"])
+        if item["local_official_docs"]:
+            ai_lines.append(f"    local_official_docs_manifest: {quote(str(item['local_official_docs_path']))}")
         by_category.setdefault(str(item["category"]), []).append(item)
     for category, category_items in sorted(by_category.items()):
         map_lines.extend([f"## {category}", ""])

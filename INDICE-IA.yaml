@@ -4,6 +4,8 @@ catalog: CATALOG.yml
 map: MAPA.md
 technology_map: MAPA-TECNOLOGIAS.md
 technology_record_files: [tech.yml, fontes.yml, README.md]
+local_documentation_directory: documentacao-oficial/
+local_documentation_manifest: documentacao-oficial/README.md
 technologies:
   - id: "cryptography"
     name: "Criptografia aplicada"
@@ -12,6 +14,7 @@ technologies:
     path: "docs/ciberseguranca/cryptography"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "identity-access"
     name: "Identidade e controle de acesso"
     category: "ciberseguranca"
@@ -19,6 +22,7 @@ technologies:
     path: "docs/ciberseguranca/identity-access"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "incident-response"
     name: "Resposta a incidentes"
     category: "ciberseguranca"
@@ -26,6 +30,7 @@ technologies:
     path: "docs/ciberseguranca/incident-response"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "mitre-attack"
     name: "MITRE ATT&CK"
     category: "ciberseguranca"
@@ -33,6 +38,7 @@ technologies:
     path: "docs/ciberseguranca/mitre-attack"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "nist-csf"
     name: "NIST Cybersecurity Framework"
     category: "ciberseguranca"
@@ -40,6 +46,7 @@ technologies:
     path: "docs/ciberseguranca/nist-csf"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "nist-sp-800"
     name: "NIST Special Publications 800"
     category: "ciberseguranca"
@@ -47,6 +54,7 @@ technologies:
     path: "docs/ciberseguranca/nist-sp-800"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "owasp-asvs"
     name: "OWASP ASVS"
     category: "ciberseguranca"
@@ -54,6 +62,7 @@ technologies:
     path: "docs/ciberseguranca/owasp-asvs"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "owasp-top-10"
     name: "OWASP Top 10"
     category: "ciberseguranca"
@@ -61,6 +70,7 @@ technologies:
     path: "docs/ciberseguranca/owasp-top-10"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "vulnerability-management"
     name: "Gestão de vulnerabilidades"
     category: "ciberseguranca"
@@ -68,6 +78,7 @@ technologies:
     path: "docs/ciberseguranca/vulnerability-management"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "ci-cd"
     name: "CI/CD"
     category: "devops-e-cloud"
@@ -75,6 +86,7 @@ technologies:
     path: "docs/devops-e-cloud/ci-cd"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "devsecops"
     name: "DevSecOps"
     category: "devops-e-cloud"
@@ -82,6 +94,7 @@ technologies:
     path: "docs/devops-e-cloud/devsecops"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "analog-electronics"
     name: "Eletrônica analógica"
     category: "eletronica"
@@ -89,6 +102,7 @@ technologies:
     path: "docs/eletronica/analog-electronics"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "datasheets"
     name: "Datasheets e componentes"
     category: "eletronica"
@@ -96,6 +110,7 @@ technologies:
     path: "docs/eletronica/datasheets"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "digital-electronics"
     name: "Eletrônica digital"
     category: "eletronica"
@@ -103,6 +118,7 @@ technologies:
     path: "docs/eletronica/digital-electronics"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "pcb-design"
     name: "Projeto de PCB"
     category: "eletronica"
@@ -110,6 +126,7 @@ technologies:
     path: "docs/eletronica/pcb-design"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "sensors"
     name: "Sensores"
     category: "eletronica"
@@ -117,6 +134,7 @@ technologies:
     path: "docs/eletronica/sensors"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "agile"
     name: "Desenvolvimento ágil"
     category: "engenharia-de-software"
@@ -124,6 +142,7 @@ technologies:
     path: "docs/engenharia-de-software/agile"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "api-documentation"
     name: "Documentação de APIs"
     category: "engenharia-de-software"
@@ -131,6 +150,7 @@ technologies:
     path: "docs/engenharia-de-software/api-documentation"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "git"
     name: "Git"
     category: "engenharia-de-software"
@@ -138,6 +158,7 @@ technologies:
     path: "docs/engenharia-de-software/git"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "kanban"
     name: "Kanban"
     category: "engenharia-de-software"
@@ -145,6 +166,7 @@ technologies:
     path: "docs/engenharia-de-software/kanban"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "scrum"
     name: "Scrum"
     category: "engenharia-de-software"
@@ -152,6 +174,7 @@ technologies:
     path: "docs/engenharia-de-software/scrum"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "semantic-versioning"
     name: "Versionamento semântico"
     category: "engenharia-de-software"
@@ -159,6 +182,7 @@ technologies:
     path: "docs/engenharia-de-software/semantic-versioning"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "software-architecture"
     name: "Arquitetura de software"
     category: "engenharia-de-software"
@@ -166,6 +190,7 @@ technologies:
     path: "docs/engenharia-de-software/software-architecture"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "software-quality"
     name: "Qualidade de software"
     category: "engenharia-de-software"
@@ -173,6 +198,7 @@ technologies:
     path: "docs/engenharia-de-software/software-quality"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "software-testing"
     name: "Testes de software"
     category: "engenharia-de-software"
@@ -180,6 +206,7 @@ technologies:
     path: "docs/engenharia-de-software/software-testing"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "cad"
     name: "CAD e desenho técnico"
     category: "engenharia-mecanica"
@@ -187,6 +214,7 @@ technologies:
     path: "docs/engenharia-mecanica/cad"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "finite-element-analysis"
     name: "Análise por elementos finitos"
     category: "engenharia-mecanica"
@@ -194,6 +222,7 @@ technologies:
     path: "docs/engenharia-mecanica/finite-element-analysis"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "fluid-mechanics"
     name: "Mecânica dos fluidos"
     category: "engenharia-mecanica"
@@ -201,6 +230,7 @@ technologies:
     path: "docs/engenharia-mecanica/fluid-mechanics"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "materials-engineering"
     name: "Materiais de engenharia"
     category: "engenharia-mecanica"
@@ -208,6 +238,7 @@ technologies:
     path: "docs/engenharia-mecanica/materials-engineering"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "mechanical-engineering"
     name: "Engenharia mecânica"
     category: "engenharia-mecanica"
@@ -215,6 +246,7 @@ technologies:
     path: "docs/engenharia-mecanica/mechanical-engineering"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "technical-standards"
     name: "Normas técnicas"
     category: "engenharia-mecanica"
@@ -222,6 +254,7 @@ technologies:
     path: "docs/engenharia-mecanica/technical-standards"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "thermodynamics"
     name: "Termodinâmica"
     category: "engenharia-mecanica"
@@ -229,6 +262,7 @@ technologies:
     path: "docs/engenharia-mecanica/thermodynamics"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "tolerancing"
     name: "Tolerâncias dimensionais"
     category: "engenharia-mecanica"
@@ -236,6 +270,7 @@ technologies:
     path: "docs/engenharia-mecanica/tolerancing"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "bash"
     name: "Bash"
     category: "programacao-linguagens"
@@ -243,6 +278,7 @@ technologies:
     path: "docs/programacao/linguagens/bash"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "c"
     name: "C"
     category: "programacao-linguagens"
@@ -250,6 +286,7 @@ technologies:
     path: "docs/programacao/linguagens/c"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "c-sharp"
     name: "C#"
     category: "programacao-linguagens"
@@ -257,6 +294,7 @@ technologies:
     path: "docs/programacao/linguagens/c-sharp"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "cpp"
     name: "C++"
     category: "programacao-linguagens"
@@ -264,6 +302,7 @@ technologies:
     path: "docs/programacao/linguagens/cpp"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "dart"
     name: "Dart"
     category: "programacao-linguagens"
@@ -271,6 +310,7 @@ technologies:
     path: "docs/programacao/linguagens/dart"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "elixir"
     name: "Elixir"
     category: "programacao-linguagens"
@@ -278,6 +318,7 @@ technologies:
     path: "docs/programacao/linguagens/elixir"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "erlang"
     name: "Erlang"
     category: "programacao-linguagens"
@@ -285,6 +326,7 @@ technologies:
     path: "docs/programacao/linguagens/erlang"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "fortran"
     name: "Fortran"
     category: "programacao-linguagens"
@@ -292,6 +334,7 @@ technologies:
     path: "docs/programacao/linguagens/fortran"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "go"
     name: "Go"
     category: "programacao-linguagens"
@@ -299,6 +342,7 @@ technologies:
     path: "docs/programacao/linguagens/go"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "haskell"
     name: "Haskell"
     category: "programacao-linguagens"
@@ -306,6 +350,7 @@ technologies:
     path: "docs/programacao/linguagens/haskell"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "java"
     name: "Java"
     category: "programacao-linguagens"
@@ -313,6 +358,7 @@ technologies:
     path: "docs/programacao/linguagens/java"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "javascript"
     name: "JavaScript"
     category: "programacao-linguagens"
@@ -320,6 +366,7 @@ technologies:
     path: "docs/programacao/linguagens/javascript"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "julia"
     name: "Julia"
     category: "programacao-linguagens"
@@ -327,6 +374,7 @@ technologies:
     path: "docs/programacao/linguagens/julia"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "kotlin"
     name: "Kotlin"
     category: "programacao-linguagens"
@@ -334,6 +382,7 @@ technologies:
     path: "docs/programacao/linguagens/kotlin"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "lua"
     name: "Lua"
     category: "programacao-linguagens"
@@ -341,6 +390,7 @@ technologies:
     path: "docs/programacao/linguagens/lua"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "objective-c"
     name: "Objective-C"
     category: "programacao-linguagens"
@@ -348,6 +398,7 @@ technologies:
     path: "docs/programacao/linguagens/objective-c"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "perl"
     name: "Perl"
     category: "programacao-linguagens"
@@ -355,6 +406,7 @@ technologies:
     path: "docs/programacao/linguagens/perl"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "php"
     name: "PHP"
     category: "programacao-linguagens"
@@ -362,6 +414,7 @@ technologies:
     path: "docs/programacao/linguagens/php"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "powershell"
     name: "PowerShell"
     category: "programacao-linguagens"
@@ -369,13 +422,16 @@ technologies:
     path: "docs/programacao/linguagens/powershell"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "python"
     name: "Python"
     category: "programacao-linguagens"
     status: "in-progress"
     path: "docs/programacao/linguagens/python"
-    official_source_count: 5
+    official_source_count: 6
     source_quota_status: "pending"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/programacao/linguagens/python/documentacao-oficial/README.md"
   - id: "r"
     name: "R"
     category: "programacao-linguagens"
@@ -383,6 +439,7 @@ technologies:
     path: "docs/programacao/linguagens/r"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "ruby"
     name: "Ruby"
     category: "programacao-linguagens"
@@ -390,6 +447,7 @@ technologies:
     path: "docs/programacao/linguagens/ruby"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "rust"
     name: "Rust"
     category: "programacao-linguagens"
@@ -397,6 +455,7 @@ technologies:
     path: "docs/programacao/linguagens/rust"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "scala"
     name: "Scala"
     category: "programacao-linguagens"
@@ -404,6 +463,7 @@ technologies:
     path: "docs/programacao/linguagens/scala"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "solidity"
     name: "Solidity"
     category: "programacao-linguagens"
@@ -411,6 +471,7 @@ technologies:
     path: "docs/programacao/linguagens/solidity"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "sql"
     name: "SQL"
     category: "programacao-linguagens"
@@ -418,6 +479,7 @@ technologies:
     path: "docs/programacao/linguagens/sql"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "swift"
     name: "Swift"
     category: "programacao-linguagens"
@@ -425,6 +487,7 @@ technologies:
     path: "docs/programacao/linguagens/swift"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "typescript"
     name: "TypeScript"
     category: "programacao-linguagens"
@@ -432,6 +495,7 @@ technologies:
     path: "docs/programacao/linguagens/typescript"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "verilog"
     name: "Verilog"
     category: "programacao-linguagens"
@@ -439,6 +503,7 @@ technologies:
     path: "docs/programacao/linguagens/verilog"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "vhdl"
     name: "VHDL"
     category: "programacao-linguagens"
@@ -446,6 +511,7 @@ technologies:
     path: "docs/programacao/linguagens/vhdl"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "zig"
     name: "Zig"
     category: "programacao-linguagens"
@@ -453,6 +519,7 @@ technologies:
     path: "docs/programacao/linguagens/zig"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "css"
     name: "CSS"
     category: "programacao-web"
@@ -460,6 +527,7 @@ technologies:
     path: "docs/programacao/web/css"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "html"
     name: "HTML"
     category: "programacao-web"
@@ -467,6 +535,7 @@ technologies:
     path: "docs/programacao/web/html"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "http"
     name: "HTTP"
     category: "programacao-web"
@@ -474,6 +543,7 @@ technologies:
     path: "docs/programacao/web/http"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "json"
     name: "JSON"
     category: "programacao-web"
@@ -481,6 +551,7 @@ technologies:
     path: "docs/programacao/web/json"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "web-apis"
     name: "Web APIs"
     category: "programacao-web"
@@ -488,6 +559,7 @@ technologies:
     path: "docs/programacao/web/web-apis"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "webassembly"
     name: "WebAssembly"
     category: "programacao-web"
@@ -495,6 +567,7 @@ technologies:
     path: "docs/programacao/web/webassembly"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "xml"
     name: "XML"
     category: "programacao-web"
@@ -502,6 +575,7 @@ technologies:
     path: "docs/programacao/web/xml"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "bgp"
     name: "BGP"
     category: "redes-e-wifi"
@@ -509,6 +583,7 @@ technologies:
     path: "docs/redes-e-wifi/bgp"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "dhcp"
     name: "DHCP"
     category: "redes-e-wifi"
@@ -516,6 +591,7 @@ technologies:
     path: "docs/redes-e-wifi/dhcp"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "dns"
     name: "DNS"
     category: "redes-e-wifi"
@@ -523,6 +599,7 @@ technologies:
     path: "docs/redes-e-wifi/dns"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "ethernet"
     name: "Ethernet"
     category: "redes-e-wifi"
@@ -530,6 +607,7 @@ technologies:
     path: "docs/redes-e-wifi/ethernet"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "http-2"
     name: "HTTP/2"
     category: "redes-e-wifi"
@@ -537,6 +615,7 @@ technologies:
     path: "docs/redes-e-wifi/http-2"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "http-3"
     name: "HTTP/3"
     category: "redes-e-wifi"
@@ -544,6 +623,7 @@ technologies:
     path: "docs/redes-e-wifi/http-3"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "ipv4"
     name: "IPv4"
     category: "redes-e-wifi"
@@ -551,6 +631,7 @@ technologies:
     path: "docs/redes-e-wifi/ipv4"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "ipv6"
     name: "IPv6"
     category: "redes-e-wifi"
@@ -558,6 +639,7 @@ technologies:
     path: "docs/redes-e-wifi/ipv6"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "network-automation"
     name: "Automação de redes"
     category: "redes-e-wifi"
@@ -565,6 +647,7 @@ technologies:
     path: "docs/redes-e-wifi/network-automation"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "network-routing"
     name: "Roteamento de redes"
     category: "redes-e-wifi"
@@ -572,6 +655,7 @@ technologies:
     path: "docs/redes-e-wifi/network-routing"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "ssh"
     name: "SSH"
     category: "redes-e-wifi"
@@ -579,6 +663,7 @@ technologies:
     path: "docs/redes-e-wifi/ssh"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "tcp-ip"
     name: "TCP/IP"
     category: "redes-e-wifi"
@@ -586,6 +671,7 @@ technologies:
     path: "docs/redes-e-wifi/tcp-ip"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "tls"
     name: "TLS"
     category: "redes-e-wifi"
@@ -593,6 +679,7 @@ technologies:
     path: "docs/redes-e-wifi/tls"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "vlan"
     name: "VLAN"
     category: "redes-e-wifi"
@@ -600,6 +687,7 @@ technologies:
     path: "docs/redes-e-wifi/vlan"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "wifi-802-11"
     name: "Wi-Fi / IEEE 802.11"
     category: "redes-e-wifi"
@@ -607,6 +695,7 @@ technologies:
     path: "docs/redes-e-wifi/wifi-802-11"
     official_source_count: 5
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "embedded-systems"
     name: "Sistemas embarcados"
     category: "sistemas-embarcados"
@@ -614,6 +703,7 @@ technologies:
     path: "docs/sistemas-embarcados/embedded-systems"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false
   - id: "microcontrollers"
     name: "Microcontroladores"
     category: "sistemas-embarcados"
@@ -621,3 +711,4 @@ technologies:
     path: "docs/sistemas-embarcados/microcontrollers"
     official_source_count: 0
     source_quota_status: "pending"
+    has_local_official_docs: false

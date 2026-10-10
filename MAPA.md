@@ -7,7 +7,7 @@
 3. `MAPA-TECNOLOGIAS.md`: lista navegável das tecnologias cadastradas.
 4. `INDICE-IA.yaml`: inventário estruturado para ingestão automatizada.
 5. `CATALOG.yml`: catálogo completo com caminhos e estado de curadoria.
-6. Pasta da tecnologia: resumo, metadados, fontes, versões e boas práticas.
+6. Pasta da tecnologia: resumo, metadados, fontes, versões e boas práticas; quando houver redistribuição autorizada, `documentacao-oficial/` contém a cópia local e seu manifesto.
 
 ## Hierarquia
 
@@ -35,6 +35,7 @@ Cada tecnologia fica em uma pasta própria. O `CATALOG.yml` aponta para o diret�
 - Leia este mapa e o índice antes de percorrer arquivos em massa.
 - Use `tech.yml` como fonte de identidade e `fontes.yml` para verificar afirmações técnicas.
 - Respeite idioma, versão, autoridade, status editorial e licença declarados.
+- Verifique no `README.md` da tecnologia se existe cópia local autorizada; a lista de URLs por si só não é um arquivo offline.
 - Não trate documento de fornecedor como padrão normativo, nem fonte secundária como oficial.
 - `verified_at` registra quando a fonte foi conferida; não garante que o conteúdo seguirá atual.
 - Veja o [mapa completo das tecnologias](MAPA-TECNOLOGIAS.md) para abrir uma entrada específica.

@@ -15,6 +15,9 @@ Cada tecnologia deve ter uma pasta com `README.md`, `tech.yml`, `fontes.yml`, `v
 - Procure cinco referências oficiais relevantes. Use `partial` com justificativa quando não houver cinco referências adequadas; use `pending` enquanto a pesquisa não estiver concluída.
 - Registre data de verificação, edição/versão e condição de acesso. Não use URLs de busca como fonte.
 - Escreva resumos próprios; não copie páginas ou PDFs sem licença compatível.
+- Para incluir documentos reais no repositório, obtenha-os do mantenedor ou órgão oficial, confirme que a licença permite redistribuição, preserve os avisos originais e adicione `documentacao-oficial/README.md` com URL direta, versão/edição, data de obtenção, licença, formato, checksum SHA-256 e lista de conteúdo. Não transforme um link em alegação de que há cópia local.
+- Não inclua padrões pagos/restritos nem documentação de fornecedor sem autorização. Nesses casos, mantenha a referência oficial e explique a condição de acesso; não contorne login, paywall ou controles de acesso.
+- Prefira cópias em texto pesquisável e sem conversões que alterem o conteúdo. Trate cada atualização como nova versão identificável, preservando o histórico.
 - Identifique material arquivado, rascunho, proposta e padrão vigente corretamente.
 
 ## Antes de abrir um pull request
