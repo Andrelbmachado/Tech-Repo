@@ -1,0 +1,17 @@
+id: "sensors"
+name: "Sensores"
+category: "eletronica"
+status: "planned"
+summary_pt: "Entrada planejada para Sensores; fontes oficiais e resumo bilíngue aguardam curadoria."
+summary_en: "Planned entry for Sensores; official sources and bilingual summary are awaiting curation."
+official_website: "https://www.ti.com/sensors"
+maintainer: "Texas Instruments"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 0
+  status: "pending"
+tags: []
+related_technologies: []
+last_reviewed: ""
+next_review: ""

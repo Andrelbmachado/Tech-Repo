@@ -1,0 +1,17 @@
+id: "agile"
+name: "Desenvolvimento ágil"
+category: "engenharia-de-software"
+status: "in-progress"
+summary_pt: "Entrada inicial sobre Desenvolvimento ágil. A curadoria de fontes e conteúdo técnico está em andamento."
+summary_en: "Initial entry for Desenvolvimento ágil. Source and technical content curation is in progress."
+official_website: "https://agilemanifesto.org"
+maintainer: "Agile Manifesto authors"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 5
+  status: "pending"
+tags: []
+related_technologies: []
+last_reviewed: ""
+next_review: ""

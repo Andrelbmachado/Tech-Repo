@@ -1,0 +1,17 @@
+id: "scrum"
+name: "Scrum"
+category: "engenharia-de-software"
+status: "planned"
+summary_pt: "Entrada planejada para Scrum; fontes oficiais e resumo bilíngue aguardam curadoria."
+summary_en: "Planned entry for Scrum; official sources and bilingual summary are awaiting curation."
+official_website: "https://scrumguides.org"
+maintainer: "Ken Schwaber and Jeff Sutherland"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 0
+  status: "pending"
+tags: []
+related_technologies: []
+last_reviewed: ""
+next_review: ""

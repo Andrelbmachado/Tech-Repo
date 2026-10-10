@@ -1,0 +1,3 @@
+# Tecnologias relacionadas — Testes de software
+
+Adicione relações bidirecionais ao campo `related_technologies` de [`tech.yml`](tech.yml) quando forem revisadas.

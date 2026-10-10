@@ -1,0 +1,40 @@
+name: Sugerir ou corrigir fonte
+description: Propor uma referência técnica oficial ou corrigir metadados de fonte.
+title: "[Fonte]: "
+labels: [curadoria, fontes]
+body:
+  - type: input
+    id: technology
+    attributes:
+      label: Tecnologia e caminho
+      placeholder: docs/programacao/linguagens/python
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL canônica
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: Organismo ou mantenedor
+    validations:
+      required: true
+  - type: dropdown
+    id: authority
+    attributes:
+      label: Autoridade
+      options:
+        - Primária / organismo mantenedor
+        - Documentação oficial de fornecedor
+        - Secundária / comunitária
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Versão, licença/acesso e motivo da inclusão
+    validations:
+      required: true

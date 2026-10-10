@@ -1,0 +1,17 @@
+id: "css"
+name: "CSS"
+category: "programacao-web"
+status: "in-progress"
+summary_pt: "Entrada inicial sobre CSS. A curadoria de fontes e conteúdo técnico está em andamento."
+summary_en: "Initial entry for CSS. Source and technical content curation is in progress."
+official_website: "https://www.w3.org/Style/CSS/"
+maintainer: "W3C CSS Working Group"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 5
+  status: "pending"
+tags: []
+related_technologies: []
+last_reviewed: ""
+next_review: ""

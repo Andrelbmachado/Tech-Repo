@@ -1,0 +1,17 @@
+id: "digital-electronics"
+name: "Eletrônica digital"
+category: "eletronica"
+status: "planned"
+summary_pt: "Entrada planejada para Eletrônica digital; fontes oficiais e resumo bilíngue aguardam curadoria."
+summary_en: "Planned entry for Eletrônica digital; official sources and bilingual summary are awaiting curation."
+official_website: "https://www.nand2tetris.org"
+maintainer: "Nand2Tetris"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 0
+  status: "pending"
+tags: []
+related_technologies: []
+last_reviewed: ""
+next_review: ""

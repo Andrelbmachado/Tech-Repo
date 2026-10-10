@@ -1,0 +1,17 @@
+id: "ipv6"
+name: "IPv6"
+category: "redes-e-wifi"
+status: "in-progress"
+summary_pt: "Entrada inicial sobre IPv6. A curadoria de fontes e conteúdo técnico está em andamento."
+summary_en: "Initial entry for IPv6. Source and technical content curation is in progress."
+official_website: "https://www.rfc-editor.org/rfc/rfc8200"
+maintainer: "IETF"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 5
+  status: "pending"
+tags: []
+related_technologies: []
+last_reviewed: ""
+next_review: ""

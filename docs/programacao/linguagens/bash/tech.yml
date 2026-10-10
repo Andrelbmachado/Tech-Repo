@@ -1,0 +1,17 @@
+id: "bash"
+name: "Bash"
+category: "programacao-linguagens"
+status: "in-progress"
+summary_pt: "Entrada inicial sobre Bash. A curadoria de fontes e conteúdo técnico está em andamento."
+summary_en: "Initial entry for Bash. Source and technical content curation is in progress."
+official_website: "https://www.gnu.org/software/bash/manual/"
+maintainer: "GNU Project"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 5
+  status: "pending"
+tags: []
+related_technologies: []
+last_reviewed: ""
+next_review: ""

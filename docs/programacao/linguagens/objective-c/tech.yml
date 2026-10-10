@@ -1,0 +1,17 @@
+id: "objective-c"
+name: "Objective-C"
+category: "programacao-linguagens"
+status: "in-progress"
+summary_pt: "Entrada inicial sobre Objective-C. A curadoria de fontes e conteúdo técnico está em andamento."
+summary_en: "Initial entry for Objective-C. Source and technical content curation is in progress."
+official_website: "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/"
+maintainer: "Apple"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 5
+  status: "pending"
+tags: []
+related_technologies: []
+last_reviewed: ""
+next_review: ""

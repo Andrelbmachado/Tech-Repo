@@ -1,0 +1,17 @@
+id: "materials-engineering"
+name: "Materiais de engenharia"
+category: "engenharia-mecanica"
+status: "planned"
+summary_pt: "Entrada planejada para Materiais de engenharia; fontes oficiais e resumo bilíngue aguardam curadoria."
+summary_en: "Planned entry for Materiais de engenharia; official sources and bilingual summary are awaiting curation."
+official_website: "https://www.asminternational.org"
+maintainer: "ASM International"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 0
+  status: "pending"
+tags: []
+related_technologies: []
+last_reviewed: ""
+next_review: ""

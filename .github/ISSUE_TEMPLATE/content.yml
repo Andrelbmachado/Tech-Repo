@@ -1,0 +1,23 @@
+name: Correção técnica ou editorial
+description: Relatar conteúdo desatualizado, erro ou melhoria de navegação.
+title: "[Correção]: "
+labels: [curadoria]
+body:
+  - type: input
+    id: path
+    attributes:
+      label: Arquivo ou tecnologia
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: O que precisa ser corrigido?
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Fonte oficial que sustenta a correção
+    validations:
+      required: true

@@ -1,0 +1,17 @@
+id: "php"
+name: "PHP"
+category: "programacao-linguagens"
+status: "in-progress"
+summary_pt: "Entrada inicial sobre PHP. A curadoria de fontes e conteúdo técnico está em andamento."
+summary_en: "Initial entry for PHP. Source and technical content curation is in progress."
+official_website: "https://www.php.net"
+maintainer: "PHP Group"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 5
+  status: "pending"
+tags: []
+related_technologies: []
+last_reviewed: ""
+next_review: ""
