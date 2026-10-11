@@ -1,5 +1,7 @@
 # Tech-Repo
 
+> 📚 **Documentação oficial:** veja o [índice de documentação oficial](DOCUMENTACAO-OFICIAL.md) — cópias locais (quando a licença permite) ou links oficiais em `docs/<categoria>/<tecnologia>/documentacao-oficial/`.
+
 Biblioteca bilíngue de referências técnicas para pessoas e sistemas de IA. Cada tecnologia tem uma pasta própria com resumos originais, metadados estruturados e referências oficiais. Quando a licença autoriza redistribuição, também mantemos cópias locais dos documentos oficiais, identificadas e versionadas.
 
 **Navegação rápida:** [Mapa](MAPA.md) · [Tecnologias](MAPA-TECNOLOGIAS.md) · [Índice para IA](INDICE-IA.yaml) · [Catálogo](CATALOG.yml) · [Manutenção](MAINTENANCE.md) · [Contribuir](CONTRIBUTING.md) · [Segurança](SECURITY.md)
