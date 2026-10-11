@@ -1,0 +1,18 @@
+id: "cpu"
+name: "Processadores (CPU)"
+category: "hardware"
+status: "in-progress"
+summary_pt: "Arquitetura e manuais oficiais de processadores x86-64 e Arm."
+summary_en: "Official architecture manuals for x86-64 and Arm processors."
+official_website: "https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html"
+maintainer: "Intel / AMD / Arm"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 4
+  status: "partial"
+  exception_reason: "Poucas fontes oficiais abertas e verificáveis; normas completas são pagas ou restritas a membros."
+tags: []
+related_technologies: []
+last_reviewed: "2026-10-11"
+next_review: ""

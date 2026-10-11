@@ -1,0 +1,17 @@
+id: "peripherals"
+name: "Periféricos e interfaces"
+category: "hardware"
+status: "in-progress"
+summary_pt: "Interfaces de periféricos: USB, HID, DisplayPort e Bluetooth."
+summary_en: "Peripheral interfaces: USB, HID, DisplayPort and Bluetooth."
+official_website: "https://www.usb.org/documents"
+maintainer: "USB-IF / VESA"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 5
+  status: "complete"
+tags: []
+related_technologies: []
+last_reviewed: "2026-10-11"
+next_review: ""

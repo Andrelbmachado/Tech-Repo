@@ -1,0 +1,18 @@
+id: "pc-assembly"
+name: "Montagem de computadores"
+category: "hardware"
+status: "in-progress"
+summary_pt: "Guias oficiais de fabricantes para montar e configurar PCs."
+summary_en: "Official vendor guides for building and setting up PCs."
+official_website: "https://www.intel.com/content/www/us/en/gaming/resources/how-to-build-a-gaming-pc.html"
+maintainer: "Intel / AMD"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 2
+  status: "partial"
+  exception_reason: "Poucas fontes oficiais abertas e verificáveis; normas completas são pagas ou restritas a membros."
+tags: []
+related_technologies: []
+last_reviewed: "2026-10-11"
+next_review: ""

@@ -2,8 +2,8 @@
 
 Lista de todas as tecnologias do Tech-Repo e onde encontrar a documentação oficial (cópia local ou links).
 
-- Tecnologias com cópia local: **41**
-- Tecnologias somente com links: **47**
+- Tecnologias com cópia local: **50**
+- Tecnologias somente com links: **54**
 
 
 ## ciberseguranca
@@ -63,6 +63,21 @@ Lista de todas as tecnologias do Tech-Repo e onde encontrar a documentação ofi
 | Normas técnicas | [docs/engenharia-mecanica/technical-standards/documentacao-oficial](docs/engenharia-mecanica/technical-standards/documentacao-oficial/) | 🔗 links |
 | Termodinâmica | [docs/engenharia-mecanica/thermodynamics/documentacao-oficial](docs/engenharia-mecanica/thermodynamics/documentacao-oficial/) | 🔗 links |
 | Tolerâncias dimensionais | [docs/engenharia-mecanica/tolerancing/documentacao-oficial](docs/engenharia-mecanica/tolerancing/documentacao-oficial/) | 🔗 links |
+
+## hardware
+
+| Tecnologia | Documentação | Tipo |
+|---|---|---|
+| Processadores (CPU) | [docs/hardware/cpu/documentacao-oficial](docs/hardware/cpu/documentacao-oficial/) | 📦 cópia local |
+| Firmware (UEFI e ACPI) | [docs/hardware/firmware-uefi-acpi/documentacao-oficial](docs/hardware/firmware-uefi-acpi/documentacao-oficial/) | 📦 cópia local |
+| Placas de vídeo (GPU) | [docs/hardware/gpu/documentacao-oficial](docs/hardware/gpu/documentacao-oficial/) | 🔗 links |
+| Análise e diagnóstico de hardware | [docs/hardware/hardware-diagnostics/documentacao-oficial](docs/hardware/hardware-diagnostics/documentacao-oficial/) | 📦 cópia local |
+| Placas-mãe e barramentos | [docs/hardware/motherboards/documentacao-oficial](docs/hardware/motherboards/documentacao-oficial/) | 📦 cópia local |
+| Montagem de computadores | [docs/hardware/pc-assembly/documentacao-oficial](docs/hardware/pc-assembly/documentacao-oficial/) | 🔗 links |
+| Periféricos e interfaces | [docs/hardware/peripherals/documentacao-oficial](docs/hardware/peripherals/documentacao-oficial/) | 📦 cópia local |
+| Fontes de alimentação (PSU) | [docs/hardware/power-supplies/documentacao-oficial](docs/hardware/power-supplies/documentacao-oficial/) | 🔗 links |
+| Memória RAM | [docs/hardware/ram/documentacao-oficial](docs/hardware/ram/documentacao-oficial/) | 📦 cópia local |
+| Armazenamento (HDD, SSD, NVMe) | [docs/hardware/storage/documentacao-oficial](docs/hardware/storage/documentacao-oficial/) | 🔗 links |
 
 ## programacao
 
@@ -133,3 +148,14 @@ Lista de todas as tecnologias do Tech-Repo e onde encontrar a documentação ofi
 |---|---|---|
 | Sistemas embarcados | [docs/sistemas-embarcados/embedded-systems/documentacao-oficial](docs/sistemas-embarcados/embedded-systems/documentacao-oficial/) | 🔗 links |
 | Microcontroladores | [docs/sistemas-embarcados/microcontrollers/documentacao-oficial](docs/sistemas-embarcados/microcontrollers/documentacao-oficial/) | 🔗 links |
+
+## software
+
+| Tecnologia | Documentação | Tipo |
+|---|---|---|
+| Linux | [docs/software/linux/documentacao-oficial](docs/software/linux/documentacao-oficial/) | 📦 cópia local |
+| macOS | [docs/software/macos/documentacao-oficial](docs/software/macos/documentacao-oficial/) | 🔗 links |
+| POSIX e sistemas operacionais | [docs/software/posix/documentacao-oficial](docs/software/posix/documentacao-oficial/) | 🔗 links |
+| Licenças e tipos de software | [docs/software/software-licensing/documentacao-oficial](docs/software/software-licensing/documentacao-oficial/) | 📦 cópia local |
+| Virtualização | [docs/software/virtualization/documentacao-oficial](docs/software/virtualization/documentacao-oficial/) | 📦 cópia local |
+| Windows | [docs/software/windows/documentacao-oficial](docs/software/windows/documentacao-oficial/) | 🔗 links |

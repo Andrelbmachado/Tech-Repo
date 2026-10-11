@@ -19,6 +19,7 @@ SOURCE_TYPES = {"specification", "api", "guide", "runtime", "vendor", "standard"
 CATEGORY_READMES = [
     "fundamentos", "programacao", "redes-e-wifi", "ciberseguranca", "devops-e-cloud",
     "engenharia-de-software", "eletronica", "sistemas-embarcados", "engenharia-mecanica",
+    "hardware", "software",
 ]
 
 

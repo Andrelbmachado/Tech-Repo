@@ -1,0 +1,18 @@
+id: "firmware-uefi-acpi"
+name: "Firmware (UEFI e ACPI)"
+category: "hardware"
+status: "in-progress"
+summary_pt: "Especificações de firmware UEFI e ACPI."
+summary_en: "UEFI and ACPI firmware specifications."
+official_website: "https://uefi.org/specifications"
+maintainer: "UEFI Forum"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 3
+  status: "partial"
+  exception_reason: "Poucas fontes oficiais abertas e verificáveis; normas completas são pagas ou restritas a membros."
+tags: []
+related_technologies: []
+last_reviewed: "2026-10-11"
+next_review: ""

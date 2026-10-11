@@ -304,6 +304,96 @@ technologies:
     source_quota_status: "pending"
     has_local_official_docs: true
     local_official_docs_manifest: "docs/engenharia-mecanica/tolerancing/documentacao-oficial/README.md"
+  - id: "cpu"
+    name: "Processadores (CPU)"
+    category: "hardware"
+    status: "in-progress"
+    path: "docs/hardware/cpu"
+    official_source_count: 4
+    source_quota_status: "partial"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/hardware/cpu/documentacao-oficial/README.md"
+  - id: "firmware-uefi-acpi"
+    name: "Firmware (UEFI e ACPI)"
+    category: "hardware"
+    status: "in-progress"
+    path: "docs/hardware/firmware-uefi-acpi"
+    official_source_count: 3
+    source_quota_status: "partial"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/hardware/firmware-uefi-acpi/documentacao-oficial/README.md"
+  - id: "gpu"
+    name: "Placas de vídeo (GPU)"
+    category: "hardware"
+    status: "in-progress"
+    path: "docs/hardware/gpu"
+    official_source_count: 4
+    source_quota_status: "partial"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/hardware/gpu/documentacao-oficial/README.md"
+  - id: "hardware-diagnostics"
+    name: "Análise e diagnóstico de hardware"
+    category: "hardware"
+    status: "in-progress"
+    path: "docs/hardware/hardware-diagnostics"
+    official_source_count: 4
+    source_quota_status: "partial"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/hardware/hardware-diagnostics/documentacao-oficial/README.md"
+  - id: "motherboards"
+    name: "Placas-mãe e barramentos"
+    category: "hardware"
+    status: "in-progress"
+    path: "docs/hardware/motherboards"
+    official_source_count: 3
+    source_quota_status: "partial"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/hardware/motherboards/documentacao-oficial/README.md"
+  - id: "pc-assembly"
+    name: "Montagem de computadores"
+    category: "hardware"
+    status: "in-progress"
+    path: "docs/hardware/pc-assembly"
+    official_source_count: 2
+    source_quota_status: "partial"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/hardware/pc-assembly/documentacao-oficial/README.md"
+  - id: "peripherals"
+    name: "Periféricos e interfaces"
+    category: "hardware"
+    status: "in-progress"
+    path: "docs/hardware/peripherals"
+    official_source_count: 5
+    source_quota_status: "complete"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/hardware/peripherals/documentacao-oficial/README.md"
+  - id: "power-supplies"
+    name: "Fontes de alimentação (PSU)"
+    category: "hardware"
+    status: "in-progress"
+    path: "docs/hardware/power-supplies"
+    official_source_count: 2
+    source_quota_status: "partial"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/hardware/power-supplies/documentacao-oficial/README.md"
+  - id: "ram"
+    name: "Memória RAM"
+    category: "hardware"
+    status: "in-progress"
+    path: "docs/hardware/ram"
+    official_source_count: 3
+    source_quota_status: "partial"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/hardware/ram/documentacao-oficial/README.md"
+  - id: "storage"
+    name: "Armazenamento (HDD, SSD, NVMe)"
+    category: "hardware"
+    status: "in-progress"
+    path: "docs/hardware/storage"
+    official_source_count: 4
+    source_quota_status: "partial"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/hardware/storage/documentacao-oficial/README.md"
   - id: "bash"
     name: "Bash"
     category: "programacao-linguagens"
@@ -799,3 +889,57 @@ technologies:
     source_quota_status: "pending"
     has_local_official_docs: true
     local_official_docs_manifest: "docs/sistemas-embarcados/microcontrollers/documentacao-oficial/README.md"
+  - id: "linux"
+    name: "Linux"
+    category: "software"
+    status: "in-progress"
+    path: "docs/software/linux"
+    official_source_count: 5
+    source_quota_status: "complete"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/software/linux/documentacao-oficial/README.md"
+  - id: "macos"
+    name: "macOS"
+    category: "software"
+    status: "in-progress"
+    path: "docs/software/macos"
+    official_source_count: 4
+    source_quota_status: "partial"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/software/macos/documentacao-oficial/README.md"
+  - id: "posix"
+    name: "POSIX e sistemas operacionais"
+    category: "software"
+    status: "in-progress"
+    path: "docs/software/posix"
+    official_source_count: 1
+    source_quota_status: "partial"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/software/posix/documentacao-oficial/README.md"
+  - id: "software-licensing"
+    name: "Licenças e tipos de software"
+    category: "software"
+    status: "in-progress"
+    path: "docs/software/software-licensing"
+    official_source_count: 5
+    source_quota_status: "complete"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/software/software-licensing/documentacao-oficial/README.md"
+  - id: "virtualization"
+    name: "Virtualização"
+    category: "software"
+    status: "in-progress"
+    path: "docs/software/virtualization"
+    official_source_count: 3
+    source_quota_status: "partial"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/software/virtualization/documentacao-oficial/README.md"
+  - id: "windows"
+    name: "Windows"
+    category: "software"
+    status: "in-progress"
+    path: "docs/software/windows"
+    official_source_count: 4
+    source_quota_status: "partial"
+    has_local_official_docs: true
+    local_official_docs_manifest: "docs/software/windows/documentacao-oficial/README.md"

@@ -1,0 +1,17 @@
+id: "software-licensing"
+name: "Licenças e tipos de software"
+category: "software"
+status: "in-progress"
+summary_pt: "Licenças de software (livre, open source, proprietário) e identificadores SPDX."
+summary_en: "Software licenses (free, open source, proprietary) and SPDX identifiers."
+official_website: "https://opensource.org/licenses"
+maintainer: "OSI / FSF / SPDX"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 5
+  status: "complete"
+tags: []
+related_technologies: []
+last_reviewed: "2026-10-11"
+next_review: ""

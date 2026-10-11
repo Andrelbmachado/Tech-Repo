@@ -1,0 +1,18 @@
+id: "power-supplies"
+name: "Fontes de alimentação (PSU)"
+category: "hardware"
+status: "in-progress"
+summary_pt: "Guia de projeto de fontes ATX e padrões de eficiência."
+summary_en: "ATX power supply design guide and efficiency standards."
+official_website: "https://www.intel.com/content/www/us/en/content-details/336521/atx-version-3-0-multi-rail-desktop-platform-power-supply-design-guide.html"
+maintainer: "Intel"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 2
+  status: "partial"
+  exception_reason: "Poucas fontes oficiais abertas e verificáveis; normas completas são pagas ou restritas a membros."
+tags: []
+related_technologies: []
+last_reviewed: "2026-10-11"
+next_review: ""
