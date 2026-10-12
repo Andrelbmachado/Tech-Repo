@@ -25,7 +25,9 @@ docs/
 ├── engenharia-de-software/      # métodos, arquitetura, testes e qualidade
 ├── eletronica/                  # circuitos, componentes e projeto eletrônico
 ├── sistemas-embarcados/         # firmware, microcontroladores e IoT
-└── engenharia-mecanica/         # materiais, projeto, análise e processos
+├── engenharia-mecanica/         # materiais, projeto, análise e processos
+├── hardware/                    # tipos de hardware, montagem, firmware e diagnóstico
+└── software/                    # sistemas operacionais, licenças e virtualização
 ```
 
 Cada tecnologia fica em uma pasta própria. O `CATALOG.yml` aponta para o diretório e registra o estado; `fontes.yml` classifica referências primárias, oficiais de fornecedor ou secundárias.

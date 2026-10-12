@@ -1,0 +1,18 @@
+id: "posix"
+name: "POSIX e sistemas operacionais"
+category: "software"
+status: "in-progress"
+summary_pt: "Padrão POSIX (IEEE Std 1003.1) para interfaces de sistemas operacionais."
+summary_en: "POSIX (IEEE Std 1003.1) operating system interface standard."
+official_website: "https://pubs.opengroup.org/onlinepubs/9799919799/"
+maintainer: "The Open Group / IEEE"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 1
+  status: "partial"
+  exception_reason: "Poucas fontes oficiais abertas e verificáveis; normas completas são pagas ou restritas a membros."
+tags: []
+related_technologies: []
+last_reviewed: "2026-10-11"
+next_review: ""

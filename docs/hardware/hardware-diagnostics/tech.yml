@@ -1,0 +1,18 @@
+id: "hardware-diagnostics"
+name: "Análise e diagnóstico de hardware"
+category: "hardware"
+status: "in-progress"
+summary_pt: "Ferramentas e documentação oficial para analisar e diagnosticar hardware."
+summary_en: "Official tools and documentation for analyzing and diagnosing hardware."
+official_website: "https://www.smartmontools.org/"
+maintainer: "smartmontools / kernel.org / Microsoft"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 4
+  status: "partial"
+  exception_reason: "Poucas fontes oficiais abertas e verificáveis; normas completas são pagas ou restritas a membros."
+tags: []
+related_technologies: []
+last_reviewed: "2026-10-11"
+next_review: ""

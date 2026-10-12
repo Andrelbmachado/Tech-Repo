@@ -1,0 +1,17 @@
+id: "linux"
+name: "Linux"
+category: "software"
+status: "in-progress"
+summary_pt: "Kernel Linux e documentação oficial de administração."
+summary_en: "Linux kernel and official administration documentation."
+official_website: "https://www.kernel.org/"
+maintainer: "The Linux Kernel Organization"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 5
+  status: "complete"
+tags: []
+related_technologies: []
+last_reviewed: "2026-10-11"
+next_review: ""

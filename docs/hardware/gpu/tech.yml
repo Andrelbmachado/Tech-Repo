@@ -1,0 +1,18 @@
+id: "gpu"
+name: "Placas de vídeo (GPU)"
+category: "hardware"
+status: "in-progress"
+summary_pt: "Documentação oficial de GPUs e de suas plataformas de computação."
+summary_en: "Official GPU and GPU-compute platform documentation."
+official_website: "https://docs.nvidia.com/cuda/"
+maintainer: "NVIDIA / AMD / Intel"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 4
+  status: "partial"
+  exception_reason: "Poucas fontes oficiais abertas e verificáveis; normas completas são pagas ou restritas a membros."
+tags: []
+related_technologies: []
+last_reviewed: "2026-10-11"
+next_review: ""

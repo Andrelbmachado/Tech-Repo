@@ -50,6 +50,19 @@ Gerado a partir dos arquivos `tech.yml`. Edite os metadados da tecnologia, não 
 - [Termodinâmica](docs/engenharia-mecanica/thermodynamics/README.md) — `planned`, fontes: `pending`
 - [Tolerâncias dimensionais](docs/engenharia-mecanica/tolerancing/README.md) — `planned`, fontes: `pending`
 
+## hardware
+
+- [Processadores (CPU)](docs/hardware/cpu/README.md) — `in-progress`, fontes: `partial`
+- [Firmware (UEFI e ACPI)](docs/hardware/firmware-uefi-acpi/README.md) — `in-progress`, fontes: `partial`
+- [Placas de vídeo (GPU)](docs/hardware/gpu/README.md) — `in-progress`, fontes: `partial`
+- [Análise e diagnóstico de hardware](docs/hardware/hardware-diagnostics/README.md) — `in-progress`, fontes: `partial`
+- [Placas-mãe e barramentos](docs/hardware/motherboards/README.md) — `in-progress`, fontes: `partial`
+- [Montagem de computadores](docs/hardware/pc-assembly/README.md) — `in-progress`, fontes: `partial`
+- [Periféricos e interfaces](docs/hardware/peripherals/README.md) — `in-progress`, fontes: `complete`
+- [Fontes de alimentação (PSU)](docs/hardware/power-supplies/README.md) — `in-progress`, fontes: `partial`
+- [Memória RAM](docs/hardware/ram/README.md) — `in-progress`, fontes: `partial`
+- [Armazenamento (HDD, SSD, NVMe)](docs/hardware/storage/README.md) — `in-progress`, fontes: `partial`
+
 ## programacao-linguagens
 
 - [Bash](docs/programacao/linguagens/bash/README.md) — `in-progress`, fontes: `pending`
@@ -116,3 +129,12 @@ Gerado a partir dos arquivos `tech.yml`. Edite os metadados da tecnologia, não 
 
 - [Sistemas embarcados](docs/sistemas-embarcados/embedded-systems/README.md) — `planned`, fontes: `pending`
 - [Microcontroladores](docs/sistemas-embarcados/microcontrollers/README.md) — `planned`, fontes: `pending`
+
+## software
+
+- [Linux](docs/software/linux/README.md) — `in-progress`, fontes: `complete`
+- [macOS](docs/software/macos/README.md) — `in-progress`, fontes: `partial`
+- [POSIX e sistemas operacionais](docs/software/posix/README.md) — `in-progress`, fontes: `partial`
+- [Licenças e tipos de software](docs/software/software-licensing/README.md) — `in-progress`, fontes: `complete`
+- [Virtualização](docs/software/virtualization/README.md) — `in-progress`, fontes: `partial`
+- [Windows](docs/software/windows/README.md) — `in-progress`, fontes: `partial`

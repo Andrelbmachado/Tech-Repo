@@ -1,0 +1,18 @@
+id: "storage"
+name: "Armazenamento (HDD, SSD, NVMe)"
+category: "hardware"
+status: "in-progress"
+summary_pt: "Especificações de armazenamento NVMe, SATA e SSD."
+summary_en: "NVMe, SATA and SSD storage specifications."
+official_website: "https://nvmexpress.org/specifications/"
+maintainer: "NVM Express / SNIA / T13"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 4
+  status: "partial"
+  exception_reason: "Poucas fontes oficiais abertas e verificáveis; normas completas são pagas ou restritas a membros."
+tags: []
+related_technologies: []
+last_reviewed: "2026-10-11"
+next_review: ""

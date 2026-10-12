@@ -1,0 +1,18 @@
+id: "ram"
+name: "Memória RAM"
+category: "hardware"
+status: "in-progress"
+summary_pt: "Padrões de memória DRAM (DDR4, DDR5) e módulos DIMM."
+summary_en: "DRAM (DDR4, DDR5) and DIMM module standards."
+official_website: "https://www.jedec.org/standards-documents"
+maintainer: "JEDEC"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 3
+  status: "partial"
+  exception_reason: "Poucas fontes oficiais abertas e verificáveis; normas completas são pagas ou restritas a membros."
+tags: []
+related_technologies: []
+last_reviewed: "2026-10-11"
+next_review: ""

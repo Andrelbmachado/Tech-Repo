@@ -1,0 +1,18 @@
+id: "windows"
+name: "Windows"
+category: "software"
+status: "in-progress"
+summary_pt: "Documentação oficial do Windows cliente e servidor."
+summary_en: "Official Windows client and server documentation."
+official_website: "https://learn.microsoft.com/en-us/windows/"
+maintainer: "Microsoft"
+latest_verified_version: ""
+source_quota:
+  required: 5
+  official_count: 4
+  status: "partial"
+  exception_reason: "Poucas fontes oficiais abertas e verificáveis; normas completas são pagas ou restritas a membros."
+tags: []
+related_technologies: []
+last_reviewed: "2026-10-11"
+next_review: ""
