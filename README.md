@@ -1,4 +1,12 @@
-# Tech-Repo
+# Tech-Repo 📚
+
+**Um só lugar para toda a documentação de engenharia, programação e boas práticas — para pessoas e para IAs.**
+
+**Roadmap principal:** automação que acompanha lançamentos das fontes oficiais (python.org, nodejs.org, releases no GitHub etc.) e abre PRs atualizando as páginas afetadas. Ver **[PLANO.md](PLANO.md)**.
+
+---
+
+## Detalhes técnicos
 
 > 📚 **Documentação oficial:** veja o [índice de documentação oficial](DOCUMENTACAO-OFICIAL.md) — cópias locais (quando a licença permite) ou links oficiais em `docs/<categoria>/<tecnologia>/documentacao-oficial/`.
 
@@ -30,3 +38,6 @@ O catálogo lista tecnologias em diferentes etapas. `curated` identifica conteú
 ## Licenças
 
 Documentação e resumos originais: CC BY 4.0, salvo indicação específica. Ferramentas em `tools/`: MIT. Conteúdo externo mantém a licença de seus autores; consulte os metadados de cada fonte.
+
+
+> Este README e o PLANO.md foram reorganizados em 21/10/2026 a partir da visão do André. Itens marcados como **planejado** ainda não existem no código.
