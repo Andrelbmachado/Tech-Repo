@@ -2,6 +2,7 @@
 
 ## Frequência
 
+- Diário: GitHub Actions (`Watch releases`) consulta as fontes oficiais das tecnologias com bloco `release_watch` e abre um PR quando surge versão nova.
 - Semanal: GitHub Actions verifica URLs em `fontes.yml`; erros HTTP e falhas de rede ficam visíveis no workflow.
 - Mensal: revisar fontes de maior volatilidade, versões de runtime, documentação de nuvem e páginas de advisories.
 - Trimestral: revisar normas, especificações, categorias, fontes secundárias e tecnologias sem atualização editorial.
@@ -18,6 +19,27 @@
 ## Mudanças de status
 
 Use `planned` para esboços sem conteúdo de curadoria, `in-progress` durante pesquisa e revisão, e `curated` quando o resumo e os metadados tiverem revisão humana. Marque a quota como `complete` somente com cinco ou mais fontes oficiais relevantes; `partial` exige justificativa; `pending` significa que a pesquisa continua.
+
+## Vigia de lançamentos (`release_watch`)
+
+Para acompanhar versões automaticamente, declare um bloco `release_watch` no `tech.yml` da tecnologia. Provedores disponíveis em `tools/watch_releases.py`:
+
+- `endoflife` — usa `product` (ex.: `go`, `rust`), consulta `endoflife.date`.
+- `github` — usa `repo` (`owner/name`) e opcional `maintainer_owner` para travar o dono credenciado; lê a release mais recente (ignora prerelease/draft).
+- `python` — feed oficial de downloads do python.org (sem parâmetros).
+
+Exemplo:
+
+```yaml
+release_watch:
+  provider: "endoflife"
+  product: "go"
+  current_version: ""   # preenchido pelo workflow ao detectar/aplicar
+  verificado_em: ""
+  notes: "endoflife.date acompanha os lançamentos estáveis do Go."
+```
+
+Execução local: `python tools/watch_releases.py` (relata), `--write` (grava no `tech.yml`), `--json saida.json` (relatório para o PR), `--only <id...>` (limita). Só adicione provedores que apontem para a origem oficial do projeto.
 
 ## Links quebrados
 
