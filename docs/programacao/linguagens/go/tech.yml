@@ -7,6 +7,12 @@ summary_en: "Initial entry for Go. Source and technical content curation is in p
 official_website: "https://go.dev"
 maintainer: "Go project"
 latest_verified_version: ""
+release_watch:
+  provider: "endoflife"
+  product: "go"
+  current_version: ""
+  verificado_em: ""
+  notes: "endoflife.date acompanha os lançamentos estáveis do Go."
 source_quota:
   required: 5
   official_count: 5

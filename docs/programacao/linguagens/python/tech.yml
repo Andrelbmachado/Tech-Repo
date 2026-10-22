@@ -7,6 +7,11 @@ summary_en: "High-level programming language with official documentation for the
 official_website: "https://python.org"
 maintainer: "Python Software Foundation"
 latest_verified_version: "3.15 (cópia de documentação; confirmar status de lançamento)"
+release_watch:
+  provider: "python"
+  current_version: ""
+  verificado_em: ""
+  notes: "Feed oficial de downloads do python.org (PSF)."
 source_quota:
   required: 5
   official_count: 6

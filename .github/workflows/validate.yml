@@ -19,3 +19,4 @@ jobs:
       - run: python -m pip install -r requirements-dev.txt
       - run: python tools/validate_catalog.py
       - run: python tools/generate_indexes.py --check
+      - run: python -m unittest tools.test_watch_releases

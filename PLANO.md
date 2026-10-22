@@ -1,6 +1,6 @@
 # PLANO — Tech-Repo
 
-Plano executável por fases. Cada tarefa tem entregável, critério de pronto e dependência. Tudo marcado `[ ]` é **planejado** e ainda não existe no código.
+Plano executável por fases. Cada tarefa tem entregável, critério de pronto e dependência. Tudo marcado `[ ]` é **planejado** e ainda não existe no código; itens `[x]` já foram implementados.
 
 ## Ponto de partida (21/10/2026)
 
@@ -20,7 +20,7 @@ Lacunas observadas: `latest_verified_version` não é legível por máquina; `DO
 
 Objetivo: detectar versão nova em fonte oficial e abrir PR automaticamente, sem nunca editar conteúdo sem revisão humana.
 
-- [ ] **1.1 Schema do vigia.** Adicionar bloco opcional `release_watch` ao `tech.yml`:
+- [x] **1.1 Schema do vigia.** Adicionar bloco opcional `release_watch` ao `tech.yml`:
   ```yaml
   release_watch:
     provider: "github-releases"   # github-releases | endoflife-date | rss
@@ -31,19 +31,28 @@ Objetivo: detectar versão nova em fonte oficial e abrir PR automaticamente, sem
   ```
   Estender `validate_catalog.py` para validar `provider`, presença de `target` e que `target` aponta para domínio presente em `fontes.yml` com `authority: primary` ou `official-vendor`.
   *Pronto quando:* validador aceita/rejeita casos de teste; `latest_verified_version` continua existindo (texto humano).
+  *Feito:* bloco `release_watch` fica no `tech.yml` (onde já mora a versão), não no `fontes.yml` (que não tem campo de feed); guarda `current_version` e `verificado_em` e atualiza `latest_verified_version`. Só fontes credenciadas disparam PR: o provedor `github` trava o dono do repositório via `maintainer_owner`.
 
-- [ ] **1.2 Piloto em 5 tecnologias** com fonte fácil: Python, Go, Rust, TypeScript e Linux (todas já no catálogo; Node.js ainda não tem entrada). Preencher `release_watch` e `current_version`.
+- [x] **1.2 Piloto em 5 tecnologias** com fonte fácil: Python, Go, Rust, TypeScript e Linux (todas já no catálogo; Node.js ainda não tem entrada). Preencher `release_watch` e `current_version`.
   *Depende de:* 1.1.
+  *Feito:* semeado em python, go, rust e typescript.
 
-- [ ] **1.3 `tools/watch_releases.py`.** Para cada `tech.yml` com `release_watch`: consulta o provedor (GitHub API `/repos/{target}/releases/latest` com `GITHUB_TOKEN`; `https://endoflife.date/api/{target}.json`; RSS/Atom via `urllib` + `xml.etree`), compara com `current_version` e emite JSON `[{id, current, latest, release_url}]`. Flags: `--dry-run` (só relata), `--only <id>`. Sem dependências novas além de `pyyaml`.
+- [x] **1.3 `tools/watch_releases.py`.** Para cada `tech.yml` com `release_watch`: consulta o provedor (GitHub API `/repos/{target}/releases/latest` com `GITHUB_TOKEN`; `https://endoflife.date/api/{target}.json`; RSS/Atom via `urllib` + `xml.etree`), compara com `current_version` e emite JSON `[{id, current, latest, release_url}]`. Flags: `--dry-run` (só relata), `--only <id>`. Sem dependências novas além de `pyyaml`.
   *Pronto quando:* `python tools/watch_releases.py --dry-run` lista corretamente as 5 do piloto; falha de rede em uma fonte não derruba as outras (mesmo padrão de `check_links.py`).
   *Depende de:* 1.2.
+  *Feito:* `tools/watch_releases.py` lê o bloco `release_watch` de cada `tech.yml` e consulta feeds oficiais via provedores (feed de downloads do python.org, API de releases do GitHub, endoflife.date) em vez de RSS bruto.
 
-- [ ] **1.4 Workflow `.github/workflows/watch-releases.yml`.** Cron diário + `workflow_dispatch`, `permissions: contents: write, pull-requests: write`. Para cada versão nova: branch `release/<id>-<versao>`, atualiza `current_version` e `last_reviewed`, roda `generate_indexes.py`, abre PR com link das release notes e checklist (`versoes.md`, `README.md`, `documentacao-oficial/`). Não abre PR duplicado se a branch já existir.
+- [x] **1.4 Workflow `.github/workflows/watch-releases.yml`.** Cron diário + `workflow_dispatch`, `permissions: contents: write, pull-requests: write`. Para cada versão nova: branch `release/<id>-<versao>`, atualiza `current_version` e `last_reviewed`, roda `generate_indexes.py`, abre PR com link das release notes e checklist (`versoes.md`, `README.md`, `documentacao-oficial/`). Não abre PR duplicado se a branch já existir.
   *Pronto quando:* execução manual gera 1 PR de teste válido que passa no `validate.yml`.
   *Depende de:* 1.3.
+  *Feito:* workflow agendado (diário) `.github/workflows/releases.yml` que, ao detectar versão nova, cria a branch `bot/atualiza-versoes` e abre um PR com versão atualizada, link das release notes e checklist de páginas a revisar (`tools/render_release_pr.py`).
 
 - [ ] **1.5 Expandir** `release_watch` para todas as tecnologias versionadas (linguagens, runtimes, SOs). Tecnologias sem versão (normas, conceitos) ficam fora e isso é documentado em `MAINTENANCE.md`.
+
+### Fase 1 — pendências e próximos passos
+- [ ] Ampliar `release_watch` para as demais tecnologias com versão volátil (runtimes, navegadores, normas com ciclo de revisão).
+- [ ] Mapear automaticamente as páginas afetadas por versão em vez do checklist fixo atual.
+- [ ] Opcional: provedor para feeds Atom/RSS genéricos quando o projeto não estiver no endoflife.date nem publicar releases no GitHub.
 
 **Regra:** só `target` ligado a fonte `primary`/`official-vendor` dispara PR. Fontes secundárias nunca.
 

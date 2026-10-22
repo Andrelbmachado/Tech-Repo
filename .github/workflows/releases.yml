@@ -1,0 +1,57 @@
+name: Watch releases
+
+# Vigia diária de lançamentos oficiais. Quando uma fonte credenciada publica
+# versão nova, o workflow atualiza os tech.yml afetados e abre um PR com a
+# versão, o link das release notes e um checklist de páginas a revisar.
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: python -m pip install -r requirements-dev.txt
+
+      - name: Detectar versões novas
+        id: watch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # --write aplica as versões novas; o relatório JSON alimenta o corpo do PR.
+          python tools/watch_releases.py --write --json release-report.json || true
+          python tools/generate_indexes.py
+          count=$(python -c "import json; print(len(json.load(open('release-report.json'))['outdated']))")
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+
+      - name: Montar corpo do PR
+        if: steps.watch.outputs.count != '0'
+        run: python tools/render_release_pr.py release-report.json pr-body.md
+
+      - name: Abrir PR
+        if: steps.watch.outputs.count != '0'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: bot/atualiza-versoes
+          base: main
+          commit-message: "chore: atualizar versões detectadas pelo vigia de lançamentos"
+          title: "Atualização de versões detectada pelo vigia de lançamentos"
+          body-path: pr-body.md
+          delete-branch: true
+          add-paths: |
+            docs/**/tech.yml
+            CATALOG.yml
+            INDICE-IA.yaml
+            MAPA-TECNOLOGIAS.md
